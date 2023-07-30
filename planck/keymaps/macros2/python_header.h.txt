@@ -1,0 +1,7 @@
+#include <Python.h>
+
+void play_spotify_playlist_bassed(void) {
+    Py_Initialize();
+    PyRun_SimpleString("exec(open('play_bassed.py').read())");
+    Py_Finalize();
+}
